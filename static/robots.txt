@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap: https://saranshgrover.com/sitemap.xml
+sitemap: https://saranshgrover.netlify.app/sitemap.xml

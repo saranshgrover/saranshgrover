@@ -4,8 +4,8 @@ module.exports = {
   titleAlt: 'Saransh Grover', // Title for JSONLD
   description: 'Personal Website for Saransh Grover - a Computer Science student at Stony Brook University',
   headline: 'Saransh Grover', // Headline for schema.org JSONLD
-  url: 'https://saranshgrover.com', // Domain of your site. No trailing slash!
-  logo: '/logos/logo-1024.png', // Used for SEO
+  url: 'https://saranshgrover.netlify.app', // Domain of your site. No trailing slash!
+  logo: '/logos/logo-1024.jpg', // Used for SEO
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest

@@ -94,15 +94,6 @@ const Layout = ({ children, pageContext: { locale } }) => {
         <>
           <Global styles={globalStyle} />
           <SkipNavLink />
-          <LocaleSwitcher data-name="locale-switcher">
-            <Link hrefLang="de-de" to="/">
-              DE
-            </Link>{' '}
-            /{' '}
-            <Link hrefLang="en-us" to="/en">
-              EN
-            </Link>
-          </LocaleSwitcher>
           {children}
           <Footer>
             <div dangerouslySetInnerHTML={{ __html: footer }} />
