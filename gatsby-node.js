@@ -87,9 +87,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const category = c.node.data.name
     const { lang } = c.node
 
-    const localizedPath = locales[lang].default
-      ? `/categories/${_.kebabCase(category)}`
-      : `/${locales[lang].path}/categories/${_.kebabCase(category)}`
+    const localizedPath = `/categories/${_.kebabCase(category)}`
 
     createPage({
       path: localizedPath,

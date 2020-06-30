@@ -200,7 +200,6 @@ const query = graphql`
       siteMetadata {
         siteUrl
         defaultBanner: banner
-        ogLanguage
         author
         twitter
         facebook

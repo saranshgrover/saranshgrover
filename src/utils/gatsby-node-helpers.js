@@ -16,5 +16,4 @@ exports.replaceTrailing = path => (path === `/` ? path : path.replace(/\/$/, ``)
 exports.replaceBoth = _path => _path.replace(/^\/|\/$/g, '')
 
 // If the "lang" is the default language, don't create a prefix. Otherwise add a "/$path" before the slug (defined in "locales")
-exports.localizedSlug = node =>
-  locales[node.lang].default ? `/${node.uid}` : `/${locales[node.lang].path}/${node.uid}`
+exports.localizedSlug = node => `/${node.uid}`

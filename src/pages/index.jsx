@@ -97,6 +97,7 @@ const ProjectListing = styled.ul`
 const IndexWrapper = Wrapper.withComponent('main')
 
 const Index = ({ data: { homepage, social, posts, projects }, pageContext: { locale }, location }) => {
+  console.log(locale)
   const lang = React.useContext(LocaleContext)
   const i18n = lang.i18n[lang.locale]
 
