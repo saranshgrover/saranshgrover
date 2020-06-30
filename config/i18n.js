@@ -21,10 +21,10 @@ module.exports = {
     allCategories: 'Alle Kategorien',
     entries: 'Einträge',
   },
-  'en-gb': {
+  'en-us': {
     default: true,
     path: 'en',
-    locale: 'en-gb',
+    locale: 'en-us',
     siteLanguage: 'en',
     ogLang: 'en_US',
     defaultTitle: website.title,
