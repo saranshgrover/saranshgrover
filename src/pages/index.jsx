@@ -14,7 +14,7 @@ const Hero = styled.header`
 `
 
 const HeroInner = styled(Wrapper)`
-  padding-top: 13rem;
+  padding-top: 4em;
   padding-bottom: 13rem;
   h1 {
     margin-bottom: 2rem;
@@ -36,7 +36,6 @@ const HeroInner = styled(Wrapper)`
 const HeroText = styled.div`
   font-size: 1.7rem;
   line-height: 1.4;
-  margin-bottom: 2rem;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     font-size: 1.4rem;
   }
@@ -80,7 +79,6 @@ const Social = styled.ul`
 const ProjectListing = styled.ul`
   list-style-type: none;
   margin-left: 0;
-  margin-top: 4rem;
   li {
     margin-bottom: 1.45rem;
     a {
