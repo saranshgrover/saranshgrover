@@ -16,8 +16,8 @@ module.exports = {
   backgroundColor: '#EBEDF2',
 
   twitter: '@saranshgrover', // Twitter Username
-  facebook: '@neveralonesunny', // Facebook Site Name
-  googleAnalyticsID: 'UA-XXXXXX-X',
+  facebook: 'neveralonesunny', // Facebook Site Name
+  googleAnalyticsID: 'UA-171522512-1',
 
   skipNavId: 'reach-skip-nav', // ID for the "Skip to content" a11y feature
 }
