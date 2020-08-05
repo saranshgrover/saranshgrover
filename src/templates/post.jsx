@@ -7,7 +7,6 @@ import { Listing, Wrapper, SliceZone, Title, SEO, Header } from '../components'
 import Categories from '../components/Listing/Categories'
 import website from '../../config/website'
 import { LocaleContext } from '../components/Layout'
-import {withPreview} from 'gatsby-source-prismic'
 
 const Hero = styled.header`
   background-color: ${props => props.theme.colors.greyLight};
@@ -66,7 +65,7 @@ const Post = ({ data: { prismicPost, posts }, location, pageContext: { locale } 
   )
 }
 
-export default withPreview(Post)
+export default Post
 
 Post.propTypes = {
   data: PropTypes.shape({

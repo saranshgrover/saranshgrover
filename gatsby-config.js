@@ -31,7 +31,6 @@ module.exports = {
       options: {
         repositoryName: 'saranshgrovercom',
         accessToken: `${process.env.API_KEY}`,
-        
         // Get the correct URLs in blog posts
         linkResolver: () => prismicLinkResolver,
         // PrismJS highlighting for labels and slices
