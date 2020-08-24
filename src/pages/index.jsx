@@ -95,7 +95,6 @@ const ProjectListing = styled.ul`
 const IndexWrapper = Wrapper.withComponent('main')
 
 const Index = ({ data: { homepage, social, posts, projects }, pageContext: { locale }, location }) => {
-  console.log(locale)
   const lang = React.useContext(LocaleContext)
   const i18n = lang.i18n[lang.locale]
 
@@ -116,8 +115,6 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
         </HeroInner>
       </Hero>
       <IndexWrapper id={website.skipNavId} style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
-        <Title style={{ marginTop: '4rem' }}>{i18n.recent} Posts</Title>
-        <Listing posts={posts.edges} />
         <Title style={{ marginTop: '8rem' }}>
           {i18n.recent} {i18n.projects}
         </Title>
@@ -128,6 +125,9 @@ const Index = ({ data: { homepage, social, posts, projects }, pageContext: { loc
             </li>
           ))}
         </ProjectListing>
+        <Title style={{ marginTop: '4rem' }}>{i18n.recent} Posts</Title>
+        <Listing posts={posts.edges} />
+           <HeroText> <a href='/blog'>Read More</a> </HeroText>
       </IndexWrapper>
     </>
   )
@@ -178,7 +178,19 @@ export const pageQuery = graphql`
         }
       }
     }
-    posts: allPrismicPost(sort: { fields: [data___date], order: DESC }, filter: { lang: { eq: $locale } }) {
+    posts: allPrismicPost(limit: 5, sort: { fields: [data___date], order: DESC }, 
+    filter: 
+    { lang: { eq: $locale }
+    data: {
+          categories: 
+            { elemMatch: 
+              { category: { document: 
+                { elemMatch: { data: { name: { eq: "landing" } } } }
+               }
+              }
+            }
+          }})
+      {
       edges {
         node {
           uid

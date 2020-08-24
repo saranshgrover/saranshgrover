@@ -22,6 +22,7 @@
 		"test:e2e:ci": "cross-env CYPRESS_SUPPORT=y start-server-and-test develop http://localhost:8000 cy:run:ci"
 	},
 	"dependencies": {
+		"@babel/helper-validator-identifier": "^7.10.4",
 		"@emotion/core": "^10.0.22",
 		"@emotion/styled": "^10.0.23",
 		"@emotion/styled-base": "^10.0.24",
@@ -42,7 +43,7 @@
 		"gatsby-plugin-sharp": "^2.2.30",
 		"gatsby-plugin-sitemap": "^2.2.18",
 		"gatsby-plugin-typography": "^2.3.13",
-		"gatsby-source-prismic": "^2.2.0",
+		"gatsby-source-prismic": "2.2.0",
 		"gatsby-transformer-sharp": "^2.2.22",
 		"lodash": "^4.17.15",
 		"prismic-reactjs": "^0.3.2",

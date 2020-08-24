@@ -15,7 +15,7 @@ const Listing = ({ posts }) => (
     {posts.map(post => {
       let categories = false
       if (post.node.data.categories[0].category) {
-        categories = post.node.data.categories.map(c => c.category.document[0].data.name)
+        categories = post.node.data.categories.filter(c => c.category.document.findIndex(d =>d.data.name!== 'landing') !==-1).map(c => c.category.document[0].data.name)
       }
       return <ListItem key={post.node.uid} node={post.node} categories={categories} />
     })}

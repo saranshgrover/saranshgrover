@@ -41,6 +41,7 @@ const CatWrapper = Wrapper.withComponent('main')
 const Categories = ({ location, data: { categories }, pageContext: { locale } }) => {
   const lang = React.useContext(LocaleContext)
   const i18n = lang.i18n[lang.locale]
+  console.log(categories)
 
   return (
     <>
@@ -57,7 +58,7 @@ const Categories = ({ location, data: { categories }, pageContext: { locale } })
           {categories.totalCount} {i18n.entries}
         </Title>
         <List>
-          {categories.edges.map(cat => (
+          {categories.edges.filter(cat => cat.node.data.name!=='landing').map(cat => (
             <LocalizedLink key={cat.node.data.name} to={`/categories/${kebabCase(cat.node.data.name)}`}>
               {cat.node.data.name}
             </LocalizedLink>
