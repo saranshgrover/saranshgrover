@@ -9,7 +9,7 @@ module.exports = {
   ogLanguage: 'en_US', // Facebook Language
 
   // JSONLD / Manifest
-  favicon: 'src/favicon.png', // Used for manifest favicon generation
+  favicon: 'src/favicon.ico', // Used for manifest favicon generation
   shortName: 'Saransh', // shortname for manifest. MUST be shorter than 12 characters
   author: 'saranshgrover', // Author for schemaORGJSONLD
   themeColor: '#3D63AE',
