@@ -1,5 +1,5 @@
 # Saransh Grover
 
- 🎓 I am a Senior at Stony Brook University majoring in Computer Science and minoring in English.  Some of my interests lie in UI/UX Design, Visualization, Gesture Interfaces and Abstraction.
+I am an incoming Graduate Student at University of Maryland's Human Computer Interaction program. I recently graduated from Stony Brook University with a Bachelors of Science in Computer Science. I'm passionate about UI/UX Design especially with AR and VR devices, Visualizations with respect to journalism on the web and modern gesture interfaces.
 
 ![Saransh's github stats](https://github-readme-stats.vercel.app/api?username=saranshgrover&show_icons=true&theme=radical&hide=stars)
